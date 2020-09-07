@@ -5,10 +5,9 @@ import PageHeader from '../../../components/PageHeader';
 
 import './styles.css';
 
-import imgUser from '../../images/userprof.png';
-
-import whatsappIcon from '../../images/icons/whatsapp.svg';
 import TeacherItem from '../../../components/TeacherItem';
+import Input from '../../../components/Input';
+import Select from '../../../components/Select';
 
 
 function TeacherList() {
@@ -17,18 +16,37 @@ function TeacherList() {
         <div id="page-teacher-list" className="container" >
             <PageHeader title="Estes são os proffys disponíveis.">
                 <form action="" id="search-teachers">
-                    <div className="input-block">
-                        <label htmlFor="subject">Matéria</label>
-                        <input type="text" id="subject" />
-                    </div>
-                    <div className="input-block">
-                        <label htmlFor="week_day">Dias da semana</label>
-                        <input type="text" id="week_day" />
-                    </div>
-                    <div className="input-block">
-                        <label htmlFor="time">Hora</label>
-                        <input type="text" id="time" />
-                    </div>
+
+                    <Select 
+                        name="subject" 
+                        label="Matéria" 
+                        options={[
+                            { value: 'Artes', label: 'Artes' },
+                            { value: 'Matematica', label: 'Matematica' },
+                            { value: 'Ciencias', label: 'Ciencias' },
+                            { value: 'Fisica', label: 'Fisica' },
+                            { value: 'Biologia', label: 'Biologia' },
+                            { value: 'Quimica', label: 'Quimica' },
+                            { value: 'Filosofia', label: 'Filosofia' },
+                            { value: 'Portugues', label: 'Portugues' }
+                        ]}
+                    /> 
+
+                    <Select 
+                        name="week_day" 
+                        label="Dia da semana" 
+                        options={[
+                            { value: '1', label: 'Domingo' },
+                            { value: '2', label: 'Segunda-feira' },
+                            { value: '3', label: 'Terça-feira' },
+                            { value: '4', label: 'Quarta-feira' },
+                            { value: '5', label: 'Quinta-feira' },
+                            { value: '6', label: 'Sexta-feira' },
+                            { value: '7', label: 'Sabado' }
+                        ]}
+                    />
+                    <Input name="time" label="Hora" type="time" className="center" />
+
                 </form>
             </PageHeader>
 

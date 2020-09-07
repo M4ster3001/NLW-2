@@ -67,6 +67,35 @@ function TeacherItem() {
                         Entrar em contato
                     </button>
                 </footer>
+            </article>  
+                    
+            <article className="teacher-item">
+                <header>
+                    <img src={imgUser} alt="Prof. Aldo Junior" />
+
+                    <div>
+                        <strong>Jaqueline</strong>
+                        <span>Investigação</span>
+                    </div>
+                </header>
+
+                <p>
+                    Apaixonado por misterios e enigmas.
+                    <br/>
+                    Considerada por três anos seguidos a melhor investigadora de Mirandopolis.
+                </p>
+
+                <footer>
+                    <p>
+                        Preço/ Hora
+                        <strong> R$ 250,00</strong>
+                    </p>
+
+                    <button type="button">
+                        <img src={whatsappIcon} alt="Whatsapp"/>
+                        Entrar em contato
+                    </button>
+                </footer>
             </article>          
         </>
     );

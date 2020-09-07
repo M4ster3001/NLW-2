@@ -35,6 +35,16 @@ body {
   background: var(--color-background);
 }
 
+.center {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #root {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,7 +64,7 @@ body, input, button, textarea {
 
 .container {
   width: 90vw;
-  max-width: 700px;
+  max-width: 1100px;
 }
 
 @media (min-width: 700px) {
