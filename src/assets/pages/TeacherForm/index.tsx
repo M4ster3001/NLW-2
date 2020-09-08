@@ -52,14 +52,31 @@ function TeacherForm() {
                 </fieldset>
 
                 <fieldset>
-                    <legend>]
+                    <legend>
                         Horários disponíveis
                         <button type="button">
                             + Novo horário
                         </button>
                     </legend>
 
-                    
+                    <div className="schedule-item">
+                        <Select 
+                            name="week_day" 
+                            label="Dia da semana" 
+                            options={[
+                                { value: '1', label: 'Domingo' },
+                                { value: '2', label: 'Segunda-feira' },
+                                { value: '3', label: 'Terça-feira' },
+                                { value: '4', label: 'Quarta-feira' },
+                                { value: '5', label: 'Quinta-feira' },
+                                { value: '6', label: 'Sexta-feira' },
+                                { value: '7', label: 'Sabado' }
+                            ]}
+                        />
+
+                        <Input name="from" label="Das" type="time" className="center" />
+                        <Input name="to" label="Até" type="time" className="center"  />
+                    </div>
                 </fieldset>
 
                 <footer>

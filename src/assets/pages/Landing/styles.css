@@ -10,8 +10,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--color-text-in-primary);
-  background-color: var(--color-primary);
+  color: #D4C2FF;
+  background-color: #8257E5;
 }
 
 #page-landing .hero-image {
@@ -59,7 +59,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  color: var(--color-button-text);
+  color: #FFFFFF;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
@@ -73,19 +73,19 @@
 }
 
 #page-landing .buttons-container a.study {
-  background: var(--color-primary-lighter);
+  background: #9871F5;
 }
 
 #page-landing .buttons-container a.study:hover {
-  background: var(--color-primary-light);
+  background: #916BEA;
 }
 
 #page-landing .buttons-container a.give-classes {
-  background: var(--color-secundary);
+  background: #04D361;
 }
 
 #page-landing .buttons-container a.give-classes:hover {
-  background: var(--color-secundary-dark);
+  background: #04BF58;
 }
 
 #page-landing .total-connections {
