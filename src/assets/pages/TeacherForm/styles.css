@@ -132,6 +132,19 @@
   #page-teacher-form main fieldset {
     padding: 0 6.4rem;
   }
+  #page-teacher-form main fieldset .schedule-item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  #page-teacher-form main fieldset .schedule-item .input-block {
+    margin-top: 0;
+  }
   #page-teacher-form main footer {
     padding: 4.0rem 6.4rem;
     display: -webkit-box;
